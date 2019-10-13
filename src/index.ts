@@ -24,7 +24,7 @@ class App extends GemElement {
   mounted() {
     const ctx = this.canvas.getContext('2d') as CanvasRenderingContext2D;
     const render = () => {
-      ctx.rect(10, 10, 150, 100);
+      ctx.rect(10, 10, 640, 640);
       ctx.fill();
       window.requestAnimationFrame(render);
     };
@@ -56,15 +56,15 @@ class App extends GemElement {
   };
   render() {
     return html`
-      <canvas></canvas>
+      <canvas width="640" height="640"></canvas>
       <audio
         muted
         crossorigin="anonymous"
-        src="https://mt-music-storage.xianqiao.wang/232636aa1833f2fd83af116c929bebcd7f8e2add470d1cd783078d263ef3bd02"
+        src="https://raw.githubusercontent.com/mantou132/javascript-learn/master/media-session/take-me-hand.mp3"
       ></audio>
       <button @click=${this.onClick}>play</button>
       <button @click=${this.onStop}>stop</button>
-      <video controls muted></video>
+      <video controls muted width="640" height="640"></video>
     `;
   }
 }

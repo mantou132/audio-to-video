@@ -21,7 +21,7 @@ module.exports = {
     extensions: ['.ts', '.js'],
   },
   output: {
-    publicPath: '/',
+    publicPath: process.env.NODE_ENV === 'development' ? '/' : 'https://mantou132.github.io/audio-to-video/build/',
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, 'build'),
   },
@@ -38,6 +38,7 @@ module.exports = {
       rel: 'prefetch',
       include: 'asyncChunks',
     }),
+    // @ts-ignore
     new CopyWebpackPlugin([{ from: './public', to: './' }]),
     // manifest
     // service worker
