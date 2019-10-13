@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "lint": "tsc --noEmit && eslint --ext .ts --fix src/",
-    "start": "webpack-dev-server --open",
+    "start": "NODE_ENV=development webpack-dev-server --open",
     "build": "webpack"
   },
   "author": "王先硚",

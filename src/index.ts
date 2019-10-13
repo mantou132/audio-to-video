@@ -60,7 +60,7 @@ class App extends GemElement {
       <audio
         muted
         crossorigin="anonymous"
-        src="https://mt-music-storage.xianqiao.wang/232636aa1833f2fd83af116c929bebcd7f8e2add470d1cd783078d263ef3bd02"
+        src="https://raw.githubusercontent.com/mantou132/javascript-learn/master/media-session/take-me-hand.mp3"
       ></audio>
       <button @click=${this.onClick}>play</button>
       <button @click=${this.onStop}>stop</button>
