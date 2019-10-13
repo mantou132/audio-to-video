@@ -14,6 +14,7 @@
     "@mantou/gem": "^0.1.8"
   },
   "devDependencies": {
+    "@types/dom-mediacapture-record": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
     "clean-webpack-plugin": "^3.0.0",
@@ -28,7 +29,7 @@
     "preload-webpack-plugin": "^3.0.0-beta.3",
     "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
-    "typescript": "^3.5.2",
+    "typescript": "^3.7.0-beta",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",
